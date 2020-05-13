@@ -1,0 +1,52 @@
+<!doctype html><html><head><style type="text/css" id="dcoder_stylesheet">div{
+  height:468px;
+  width:600px;
+  overflow:hidden;
+  overflow:scroll;
+ 
+}
+input{
+  font-size:40px;
+  
+}
+
+#btn{
+  font-size:40px;
+}
+
+#bt1{
+  background-color:lightgreen;
+  border:2px solid red;
+  border-radius:15px;
+  max-width:350px;
+  font-size:25px;
+}
+body {
+  font-size:30px;
+}</style></head> 
+ <body> 
+  <h1> Masanger chat </h1> 
+  <h2>User 1</h2> 
+  <div id="c1"> 
+  </div> 
+  <input type="text" id="txt1" placeholder="Type a massage"> 
+  <button id="btn" onclick="snd1()">send</button> 
+  <h2>User 2</h2> 
+  <div id="c2"> 
+  </div> 
+  <br> 
+  <input type="text" id="txt2" placeholder="Type a massage"> 
+  <button id="btn" onclick="snd()">send</button> 
+ 
+<script type="text/javascript" id="dcoder_script">function snd1(){
+  var txt1=document.getElementById("txt1").value;
+  document.getElementById("c2").innerHTML+="<br><br>"+"&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160<button id='bt1'>"+txt1+"</button>";
+  document.getElementById("c1").innerHTML+="<br><br>"+"<button id='bt1'>"+txt1+"</button>";
+  document.getElementById("txt1").value =""
+}
+function snd(){
+  var txt2=document.getElementById("txt2").value;
+  document.getElementById("c2").innerHTML+="<br><br>"+"<button id='bt1'>"+txt2+"</button>";
+  document.getElementById("c1").innerHTML+="<br><br>"+"&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160<button id='bt1'>"+txt2+"</button>";
+  document.getElementById("txt2").value =""
+}</script></body></html>
